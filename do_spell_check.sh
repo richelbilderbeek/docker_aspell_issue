@@ -12,7 +12,8 @@ echo "File without spelling errors, interactively"
 aspell -c --mode=tex correct.tex --lang=en_GB
 
 echo "File with spelling errors, interactively"
-aspell -c --mode=tex incorrect.tex --lang=en_GB
+echo "This command is commented out, as it will start an interactive session"
+# aspell -c --mode=tex incorrect.tex --lang=en_GB
 
 echo "File without spelling errors"
 cat correct.tex | aspell pipe --mode=tex --lang=en_GB
